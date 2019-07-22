@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!--
+Name: Jeremiah Rockenbach
+Date Created: 07/08/19
+Most recent revision: 07/08/19
+-->
+<html lang=en>
+    <head>
+<!--META elements to determine users screen size and language needed-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <title>Bootstrap Sample Page</title>
+
+<!--ADD bootstrap CSS-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">    
+        
+    <title>Contact Us</title>
+        
+<!--Main CSS style sheet-->
+    <link href="styles/resaurantStyles.css" rel="stylesheet" type="text/css" />
+        
+        <style>
+            .required {
+                font-weight: bold;
+            }
+    
+        </style>
+        
+    </head>
+    <body>
+        <div class="container">
+        <header>
+            <p>Contact Us</p>
+        </header>
+        
+<!--Title of Contact Us page-->        
+       
+        <h1>Rocky's Firepit</h1>
+       
+        
+<!--Navigation link to home page-->        
+        <nav>
+            <p><a class="btn badge-pill" href="index.html">Home</a></p>
+            <p><a class="btn badge-pill" href="Menu.html">Menu</a></p>
+            <p><a class="btn badge-pill" href="contact.html">Contact Us</a></p>
+        </nav>
+    
+<!--Form for Contact Information-->
+            
+        <form action="submit.html" method="post"></form>
+        <div class="row">
+            <div class="col-lg-4">
+<!--Name text label-->        
+        <label for="name" class="required">Name</label><br/>
+        <input type="text" id="name" name="name"><br />
+        
+<!--Email text label-->        
+        <label for="email">Email</label><br />
+        <input type="text" id="email" name="email"><br />
+        
+<!--Phone number text label-->
+        <label for="phone" class="required">Phone</label><br / >
+        <input type="text" id="phone" name="phone"><br />
+        
+<!--Reason for Inquiry drop down label-->
+        <label for="reason" class="required">Reason for Inquiry</label><br />
+        <select id="reason" name="reason">
+            <option value="catering" selected>Catering</option>    
+            <option value="private">Private Party</option>
+            <option value="feedback">Feedback</option>
+            <option value="other">Other</option>
+        </select>
+        
+<!--Text area for Additional Information-->
+        <div>
+            <label for="info">Additional Information</label><br />
+            <textarea id="info" name="info"></textarea><br /> 
+        </div>
+            </div>
+        </div>
+        
+<!--Radio buttons for if the client has been to the restaurant before-->
+        <fieldset>
+            <legend class="required">Have you been to the restraunt?</legend><br />
+            <input type="radio" id="choice1" name="repeat" value="no">
+            <label for="choice1">No</label><br />
+            <input type="radio" id="choice2" name="repeat" value="yes">
+            <label for="choice2">Yes</label><br />
+        </fieldset>
+        
+<!--Check boxes for best days to be contacted-->
+        <fieldset>
+            <legend class="required">Best days to contact you</legend><br />
+            <input type="checkbox" id="monday" name="bestDay" value="monday">
+            <label for="monday">M</label><br />
+            <input type="checkbox" id="tuesday" name="bestDay" value="tuesday">
+            <label for="T">T</label><br />
+            <input type="checkbox" id="wednesday" name="bestDay" value="wednesday">
+            <label for="wednesday">W</label><br />
+            <input type="checkbox" id="thursday" name="bestDay" value="thursday">
+            <label for="thursday">Th</label><br />
+            <input type="checkbox" id="friday" name="bestDay" value="friday">
+            <label for="friday">F</label><br />
+        </fieldset>
+        
+<!--Submit Button for Contact Form-->
+        <input type="submit" name="submit" value="submit">
+        <hr /> 
+        
+<!--Footer to display company location and contact information-->
+        <footer>
+            <p>917 4th Ave N., Sauk Rapids, MN 56379</p>
+            <p>(320)267-3659</p>
+        </footer>
+       
+<!--ADD JavaScript files-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        
+        <script     src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        </div>
+    </body>
+</html>
